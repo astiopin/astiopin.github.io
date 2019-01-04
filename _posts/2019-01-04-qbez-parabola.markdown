@@ -64,3 +64,7 @@ Degenerate cases are trivial. In non-degenerate case, nearest point on a curve t
 $$x^3 + ( \frac{1}{2} - S_y ) x - \frac{1}{2} S_x = 0$$
 
 The roots of this equation correspond to the closest points to $S$ on the parabola. Clamp the roots to $[x_0,x_1]$, choose the point nearest to $S$ and transform it back to the world space.
+
+## Comments
+
+Thanks for reading. Discuss on [reddit](https://www.reddit.com/r/GraphicsProgramming/comments/acihdu/rational_quadratic_bezier_parabola_parameters_arc/) and [hacker news](https://news.ycombinator.com/item?id=18824092).
