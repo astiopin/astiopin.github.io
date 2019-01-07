@@ -5,7 +5,7 @@ data: 2019-01-05 23:32 +0300
 categories: 
 ---
 
-While working on text rendering for my projects, I developed an algorithm for SDF font atlas calculation on GPU. The algorithm requires OpenGL 2.0 capable hardware and fast enough for generating font atlases at runtime. The demo project is availible here (font atlas generator for my [text rendering demo](https://github.com/astiopin/webgl_fonts)).
+While working on text rendering for my projects, I developed an algorithm for SDF font atlas calculation on GPU. The algorithm requires OpenGL 2.0 capable hardware and fast enough for generating font atlases at runtime. The demo project is availible [here](https://github.com/astiopin/sdf_atlas) (font atlas generator for my [text rendering demo](https://github.com/astiopin/webgl_fonts)).
 
 # The algorithm
 
@@ -53,7 +53,7 @@ The full screen quad is rendered with stencil test enabled and blend function se
 
 ## Performance
 
-I use the (sdf_atlas) program with png and JSON saving disabled.
+I use [sdf_atlas](https://github.com/astiopin/sdf_atlas) program with png and JSON saving disabled for benchmarking.
 
 The options are ```sdf_atlas -f arial.ttf -tw 2048 -th 2048 -rh 96 -bs 16 -ur 0x21:0x7e,0xa0:0xff,0x400:0x4ff```.
 
