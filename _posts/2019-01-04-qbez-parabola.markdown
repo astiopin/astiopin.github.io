@@ -51,7 +51,7 @@ $$t = \frac{\lVert AC \rVert}{ \lVert AC \rVert + \lVert CB \rVert }$$
 
 In degenerate cases the arc length is the length of the corresponding line segments. In non-degenerate case, the arc length of a quadratic Bézier can be found as
 
-$$l = s \cdot \lvert( L(x_1) - L(x_0) \rvert$$
+$$l = s \cdot \lvert L(x_1) - L(x_0) \rvert$$
 
 where
 
