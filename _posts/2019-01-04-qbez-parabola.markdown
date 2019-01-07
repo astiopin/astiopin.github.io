@@ -1,15 +1,15 @@
 ---
 layout: post
-title: "Rational quadratic bezier parabola parameters, arc length, and nearest point on a curve"
+title: "Rational Quadratic Bézier Parabola Parameters, Arc Length, and Nearest Point on a Curve"
 data: 2019-01-04 06:21 +0300
 categories: 
 ---
 
-Any non degenerate quadratic bezier is essentialy a affine image of a unit parabola $y=x^2$. An important property of such transformation is that it have orthogonal and uniformly scaled basis. The intuition behind this is that a parabola is defined with a line (directrix) and a point (focus), and no affine transformation can either skew or non-uniformly scale this system. The transformation matrix can be calculated in the following way.
+Any non degenerate quadratic Bézier is essentialy a affine image of a unit parabola $y=x^2$. An important property of such transformation is that it have orthogonal and uniformly scaled basis. The intuition behind this is that a parabola is defined with a line (directrix) and a point (focus), and no affine transformation can either skew or non-uniformly scale this system. The transformation matrix can be calculated in the following way.
 
 ## Non-degenerate case
 
-For a rational quadratic bezier, defined with control points $A$, $C$, $B$ (see the pic) find a midpoint $M$ of $AB$. The line $CM$ is parallel to the axis of the parabola. Normalizing $\vec{CM}$ we get vector $\vec{Y}$, and rotating it 90° to the right we get vector $\vec{X}$. These vector with scale applied would form a basis of the transformation.
+For a rational quadratic Bézier, defined with control points $A$, $C$, $B$ (see the pic) find a midpoint $M$ of $AB$. The line $CM$ is parallel to the axis of the parabola. Normalizing $\vec{CM}$ we get vector $\vec{Y}$, and rotating it 90° to the right we get vector $\vec{X}$. These vector with scale applied would form a basis of the transformation.
 
 ![](/assets/qbez-parabola1.png)
 
@@ -35,7 +35,7 @@ $$Q = \begin{bmatrix} X_x \cdot s & Y_x \cdot s & V_x \\ X_y \cdot s & Y_y \cdot
 
 ## Degenerate cases
 
-In degenerate cases, (a) and (b) on the pic, a quadratic bezier is either a line segment $AB$ or two line segments $AP$ and $PB$, where
+In degenerate cases, (a) and (b) on the pic, a quadratic Bézier is either a line segment $AB$ or two line segments $AP$ and $PB$, where
 
 $$P(t) = (1-t)^2 \cdot A + 2 (1-t) \cdot t \cdot C + t^2 \cdot B$$
 
@@ -49,7 +49,7 @@ $$t = \frac{\lVert AC \rVert}{ \lVert AC \rVert + \lVert CB \rVert }$$
 
 ## Arc length
 
-In degenerate cases the arc length is the length of the corresponding line segments. In non-degenerate case, the arc length of a quadratic bezier can be found as
+In degenerate cases the arc length is the length of the corresponding line segments. In non-degenerate case, the arc length of a quadratic Bézier can be found as
 
 $$l = s \cdot \left( L(x_1) - L(x_0) \right)$$
 
