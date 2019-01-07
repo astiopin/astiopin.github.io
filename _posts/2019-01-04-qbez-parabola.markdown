@@ -9,7 +9,7 @@ Any non degenerate quadratic Bézier is essentialy a affine image of a unit para
 
 ## Non-degenerate case
 
-For a rational quadratic Bézier, defined with control points $A$, $C$, $B$ (see the pic) find a midpoint $M$ of $AB$. The line $CM$ is parallel to the axis of the parabola. Normalizing $\vec{CM}$ we get vector $\vec{Y}$, and rotating it 90° to the right we get vector $\vec{X}$. These vector with scale applied would form a basis of the transformation.
+For a rational quadratic Bézier, defined with control points $A$, $C$, $B$ (see the pic) find a midpoint $M$ of $AB$. The line $CM$ is parallel to the axis of the parabola. Normalizing $\vec{CM}$ we get vector $\vec{Y}$, and rotating it 90° to the right we get vector $\vec{X}$. These vectors with scale applied would form a basis of the transformation.
 
 ![](/assets/qbez-parabola1.png)
 
@@ -51,7 +51,7 @@ $$t = \frac{\lVert AC \rVert}{ \lVert AC \rVert + \lVert CB \rVert }$$
 
 In degenerate cases the arc length is the length of the corresponding line segments. In non-degenerate case, the arc length of a quadratic Bézier can be found as
 
-$$l = s \cdot \left( L(x_1) - L(x_0) \right)$$
+$$l = s \cdot \lvert( L(x_1) - L(x_0) \rvert$$
 
 where
 
@@ -67,4 +67,4 @@ The roots of this equation correspond to the closest points to $S$ on the parabo
 
 ## Comments
 
-Thanks for reading. Discuss on [reddit](https://www.reddit.com/r/GraphicsProgramming/comments/acihdu/rational_quadratic_bezier_parabola_parameters_arc/) and [hacker news](https://news.ycombinator.com/item?id=18824092).
+Thanks for reading. Discuss on [reddit](https://www.reddit.com/r/GraphicsProgramming/comments/acihdu/rational_quadratic_bezier_parabola_parameters_arc/).

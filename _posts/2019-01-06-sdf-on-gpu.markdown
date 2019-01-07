@@ -62,3 +62,7 @@ Number of glyphs rendered: 445, outline triangle count: 18982, fill triangle cou
 Celeron 2955U @ 1.4GHz with Intel HD graphics: font loading and vertex generation 16 ms, atlas rendering 55 ms.
 
 Ryzen 5 1400 @ 3.2GHz with GeForce GTX 1070 : font loading and vertex generation 7 ms, atlas rendering 7 ms.
+
+## Comments
+
+Thanks for reading. Discuss on [reddit](https://www.reddit.com/r/GraphicsProgramming/comments/adbx52/efficient_2d_signed_distance_field_generation_on/).
