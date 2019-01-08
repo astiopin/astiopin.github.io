@@ -39,6 +39,10 @@ $$ 0.01875324 \cdot \alpha^3 - 0.08179158 \cdot \alpha^2 + 0.33098754 \cdot \alp
 
 Once the first root is found, the Vietta's method is used to find the other root (the third root in the middle is never the closest, so it is skipped).
 
+<p align="center">
+  <img src="/assets/sdf_on_gpu-outline.gif" width="320px" height="320px"/>
+</p>    
+
 ## Stencil fill
 
 For the stencil fills I use the method by [Kokojima et al](https://www.deepdyve.com/lp/association-for-computing-machinery/resolution-independent-rendering-of-deformable-vector-objects-using-YmvFNsOBWj). The triangles are formed and rendered so, that front facing triangles increase the stencil value, and back facing ones decrease it.
@@ -47,9 +51,18 @@ For each quadratic Bézier segment two triangles are formed. One is always fille
 
 The shader works by the method described by [Loop and Blinn](https://www.microsoft.com/en-us/research/wp-content/uploads/2005/01/p1000-loop.pdf). I use different values, than Loop and Blinn in their paper. They use ```[0,0], [0.5,0], [1,1]```. The idea behind these magic numbers is pretty simple: pick two arbitrary points on a unit parabola and calculate the intersection point of their tangents to the parabola. Use these coordinates in the shader. This way the triangle vertices act as affine transformation of a unit parabola, which is exactly the way quadratic Bézier works.
 
+<p align="center">
+  <img src="/assets/sdf_on_gpu-stencil.gif" width="320px" height="320px"/>
+</p>    
+
+
 ## Color inversion
 
 The full screen quad is rendered with stencil test enabled and blend function set to ```GL_ONE_MINUS_DST_COLOR, GL_ZERO```.
+
+<p align="center">
+  <img src="/assets/sdf_on_gpu-invert.gif" width="320px" height="320px"/>
+</p>        
 
 ## Performance
 
