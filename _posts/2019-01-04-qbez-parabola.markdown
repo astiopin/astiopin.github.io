@@ -67,4 +67,4 @@ The roots of this equation correspond to the closest points to $S$ on the parabo
 
 ## Comments
 
-Thanks for reading. Discuss on [reddit](https://www.reddit.com/r/GraphicsProgramming/comments/acihdu/rational_quadratic_bezier_parabola_parameters_arc/).
+{% include comments.html %}

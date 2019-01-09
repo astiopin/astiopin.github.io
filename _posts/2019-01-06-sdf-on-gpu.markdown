@@ -78,4 +78,4 @@ Ryzen 5 1400 @ 3.2GHz with GeForce GTX 1070 : font loading and vertex generation
 
 ## Comments
 
-Thanks for reading. Discuss on [reddit](https://www.reddit.com/r/GraphicsProgramming/comments/adbx52/efficient_2d_signed_distance_field_generation_on/).
+{% include comments.html %}
