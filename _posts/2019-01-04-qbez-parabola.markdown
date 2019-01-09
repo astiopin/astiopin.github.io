@@ -65,6 +65,12 @@ $$x^3 + ( \frac{1}{2} - S_y ) x - \frac{1}{2} S_x = 0$$
 
 The roots of this equation correspond to the closest points to $S$ on the parabola. Clamp the roots to $[x_0,x_1]$, choose the point nearest to $S$ and transform it back to the world space.
 
+## Compass and Straightedge construction
+
+Example of compass and straightedge construction with Geogebra:
+    
+[https://www.geogebra.org/geometry/caa8bnuh](https://www.geogebra.org/geometry/caa8bnuh)
+
 ## Comments
 
 {% include comments.html %}
