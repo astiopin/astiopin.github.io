@@ -1,15 +1,15 @@
 ---
 layout: post
-title: "Rational Quadratic Bézier Parabola Parameters, Arc Length, and Nearest Point on a Curve"
+title: "Quadratic Bézier Parabola Parameters, Arc Length, and Nearest Point on a Curve"
 data: 2019-01-04 06:21 +0300
 categories: 
 ---
 
-Any non degenerate quadratic Bézier is essentialy a affine image of a unit parabola $y=x^2$. An important property of such transformation is that it have orthogonal and uniformly scaled basis. The intuition behind this is that a parabola is defined with a line (directrix) and a point (focus), and no affine transformation can either skew or non-uniformly scale this system. The transformation matrix can be calculated in the following way.
+Any non degenerate regular quadratic Bézier is essentialy a affine image of a unit parabola $y=x^2$. An important property of such transformation is that it have orthogonal and uniformly scaled basis. The intuition behind this is that a parabola is defined with a line (directrix) and a point (focus), and no affine transformation can either skew or non-uniformly scale this system. The transformation matrix can be calculated in the following way.
 
 ## Non-degenerate case
 
-For a rational quadratic Bézier, defined with control points $A$, $C$, $B$ (see the pic) find a midpoint $M$ of $AB$. The line $CM$ is parallel to the axis of the parabola. Normalizing $\vec{CM}$ we get vector $\vec{Y}$, and rotating it 90° to the right we get vector $\vec{X}$. These vectors with scale applied would form a basis of the transformation.
+For a quadratic Bézier, defined with control points $A$, $C$, $B$ (see the pic) find a midpoint $M$ of $AB$. The line $CM$ is parallel to the axis of the parabola. Normalizing $\vec{CM}$ we get vector $\vec{Y}$, and rotating it 90° to the right we get vector $\vec{X}$. These vectors with scale applied would form a basis of the transformation.
 
 ![](/assets/qbez-parabola1.png)
 
